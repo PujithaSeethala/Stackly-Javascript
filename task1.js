@@ -12,7 +12,7 @@ console.log("Mark:", mark)*/
 
 //2)Ask the user's name using prompt() and display it using alert().
 // let userName = prompt("What is your name?");
-alert(userName);
+//alert(userName);
 
 
 
