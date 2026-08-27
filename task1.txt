@@ -1,0 +1,644 @@
+1)What is a variable in JavaScript?
+
+a)A variable in javascript is a named box that stores data like numbers, text, or objects, making your code dynamic and reusable.
+
+
+2)What are the three keywords used to create variables?
+
+a) var: the older way of declaring variables.
+
+   let: the modern way, used when the value can change.
+
+   const: used when the value should stay fixed.
+
+
+3)Write the syntax to create a variable using var.
+
+a) Syntax: var variableName = value;
+
+    ex: var age=20;
+        var name="Pujitha";
+
+    var: keyword to declare the variable
+
+    variableName:the name you give to the variable
+
+    value :the data stored inside the variable
+
+    Rule: var lets you declare a variable that can be re-declared and updated.
+
+
+4)Write the syntax to create a variable using let.
+ 
+a) Syntax: let variableName = value;
+    
+    ex: let age = 25;            
+        let name = "Pujitha";
+
+        let :keyword to declare the variable
+
+        variableName: the name you give to the variable
+
+        value: the data stored inside the variable
+
+    Rule: let, you can update the value later, but you cannot re-declare the same variable in the same scope.
+
+
+5) Write the syntax to create a variable using const.
+
+a) Syntax: const variableName = value;
+
+    ex: const pi = 3.14; 
+        const name = "Pujitha";
+
+        const:keyword to declare the variable
+
+        variableName: the name you give to the variable
+
+        value : the data stored inside the variable
+
+        
+        Rule: const, you must assign a value immediately, and you cannot change or re-declare it later.
+
+
+6) What is declaration?
+
+a)  Declaration means introducing a variable to the program for the first time by giving it a name.
+
+    It tells JavaScript, "Hey, I'm creating a box with this name, and I'll use it later".
+
+     ex:var age;
+        let name;
+        const pi=3.14;
+
+
+7) What is initialization?
+
+a) Initialization in JavaScript means assigning a value to a variable at the time of its declaration(creation).
+ 
+    ex: let city;   // declared but not initialized
+        let city = "Hyderabad";  // declared and initialized with value "Hyderabad"
+        const pi = 3.14;   // declared and initialized at the same time
+
+       -> You can declare first and initialize later (with var or let).
+       -> but with const you must initialize immediately.
+
+
+8)What is reassignment?
+
+a) Reassignment in JavaScript means changing the value of a variable after it has already been declared and initialized.
+
+ ex: var age = 25;   // declaration + initialization
+     age = 30;       // reassignment ->age now holds 30
+
+     let city = "Hyderabad"; // initialization
+     city = "Delhi";         // reassignment -> city now holds "Delhi"
+
+     const pi = 3.14;
+     pi = 3.14159; //  Error: cannot reassign a const
+
+    -> Reassignment is allowed with var and let.
+
+    -> Reassignment is not allowed with const.
+
+    -> It simply means changing the value stored inside the variable's box.
+
+     So, reassignment = updating the value of an existing variable.
+
+
+9) What is redeclaration?
+
+a)Redeclaration in JavaScript means declaring the same variable name again in the same scope.
+
+        ex: var x = 10;
+            var x = 20; //  Allowed -> redeclaration works with var
+            console.log(x); // 20
+
+            let y = 10;
+            let y = 20; // Error -> cannot redeclare with let
+
+            const z = 30;
+            const z = 40; // Error -> cannot redeclare with const
+
+             ->Redeclaration is allowed only with var.
+
+            ->Redeclaration is not allowed with let and const.
+
+            ->Redeclaration can cause confusion, which is why modern JavaScript prefers let and const.
+
+10)Which keyword allows redeclaration?
+
+a)The keyword that allows redeclaration in javaScript is var.
+     let:Redeclaration not allowed.
+     const: Redeclaration not allowed.
+
+    
+11)  Which keyword allows reassignment?
+
+a) var:You can change the value after declaring.
+
+   let:You can also change the value after declaring.
+
+   const:You cannot reassign; once a value is set, it stays fixed.
+
+12)Which keyword requires initialization when declared?
+
+a)The keyword that requires initialization when declared is const.
+
+  var: you can declare first and assign a value later.
+
+  let : you can also declare first and assign a value later.
+
+  const : you must assign a value immediately when declaring, otherwise Js throws an error.
+
+
+13)Identify the declaration and initialization:
+
+    let age = 25;
+
+a) Declaration :"let age" this part introduces the variable named age.
+
+   Initialization :"= 25" this part assigns the first value (25) to the variable.
+
+
+14)What is the value of a?
+
+    var a = 100;
+    console.log(a);
+a)value of a is 100.
+
+
+15)Change the value of this variable to 200:
+
+    let number = 100;
+
+a)let number = 100;   // declaration + initialization
+  number = 200;       // reassignment value changed to 200
+  console.log(number); // prints 200
+
+
+ ***var***
+
+16)What will be the output?
+
+    var a = 10;
+    console.log(a);
+
+a) The variable "a" is declared with "var" and initialized to "10".
+
+   "console.log(a);" runs, it prints the value stored in "a."
+
+   So the console will display "10". output is "10"
+
+
+17)What will be the output?
+
+    var a = 10;
+    a = 20;
+    console.log(a);
+
+a) "a = 20;" this is "reassignment", changing the value of a from 10 to 20.
+
+    console displays 20 because reassignment value is valid in "var" keyword
+
+
+18)What will be the output?
+
+        var a = 10;
+        var a = 30;
+        console.log(a);
+
+a)The variable 'a' is first declared and initialized with 10.
+
+    Then, because "var" allows "redeclaration", you declare 'a' again and assign it the value '30'.
+
+    so console displays 30 overwrites 10 and display 30.
+
+
+19)Write a var variable named name with the value "John".
+
+a)var name = "John";
+  console.log(name); // Output: John
+
+
+20)Create a var variable named price with the value 500.
+
+a)var price = 500;
+  console.log(price); // Output: 500
+
+21)Reassign price from 500 to 1000.
+
+a)var price = 500;   // declaration + initialization 
+  price = 1000;      // reassignment  value changed
+  console.log(price); // Output: 1000
+  var allows redeclaration and reassignment
+
+
+22)What will be the output?
+
+    var x = 50;
+    x = 100;
+    console.log(x);
+
+a)console displays 100.
+
+23)Can a var variable be reassigned?
+
+a)yes
+
+24)Can a var variable be redeclared?
+
+a) yes
+
+25)Write an example of var redeclaration.
+
+a)var city = "Hyderabad";   // first declaration + initialization
+ var city = "Delhi";       // redeclaration allowed with var
+ console.log(city);        // Output: Delhi
+
+ ***let***
+
+ 26)Create a let variable named age with the value 25.
+
+ a)let age = 25;
+    console.log(age); // Output: 25
+
+    let: keyword used to declare the variable.
+
+    age:variable name.
+
+    25: initialization (the value assigned).
+
+    console.log(age); :prints the value stored in the variable.
+
+    unlike var let does not allow "redeclaration" in the same scope, but it does allow "reassignment".
+
+
+27) What will be the output?
+
+    let age = 20;
+    age = 30;
+    console.log(age);
+
+a) age = 30; -> this is reassignment, changing the value from 20 to 30.
+
+    console displays 30.
+
+28)Can a let variable be reassigned?
+
+a)let age = 25;    // declaration + initialization
+    age = 30;        // reassignment  value changed
+    console.log(age); // Output: 30
+
+-> With let, you can update the value stored in the variable.
+
+->However, unlike var, you cannot redeclare the same variable name in the same scope.
+
+->let supports reassignment but not redeclaration.
+
+
+29)Can a let variable be redeclared?
+
+a)No. a let variable cannot be redeclared in the same scope.
+     
+     let age = 25;
+     let age = 30;   // Error ->Identifier 'age' has already been declared.
+
+
+30) Find the error:
+
+    let name = "John";
+    let name = "David"
+
+a)let name = "John";
+  let name = "David"; //  Error
+
+ -> With let, you cannot redeclare the same variable in the same scope.
+
+ -> The second line let name = "David"; tries to redeclare name, which causes a SyntaxError. 
+
+   -> this is the correct way
+
+    let name = "John";
+    name = "David";   // reassignment allowed
+    console.log(name); // Output: David
+    
+31)Create a let variable called city and assign "Chennai".
+
+a)let city = "Chennai";
+  console.log(city); // Output: Chennai
+
+
+32)Change the value of city to "Salem".
+
+a)let city = "Chennai";   // initial declaration
+  city = "Salem";         // reassignment value changed
+  console.log(city);      // Output: Salem
+
+ ->Redeclaration with let is not allowed in the same scope.
+
+ ->Reassignment is allowed, so you can update the value after declaring it.
+
+
+33)What will be the output?
+
+    let x = 10;
+    x = 50;
+    console.log(x);   
+
+a)console displays 50.
+
+
+34)Write a let variable called salary with the value 25000.
+
+a)let salary = 25000;
+  console.log(salary); // Output: 25000
+
+35)Reassign salary to 30000.
+
+a)let salary = 25000;   // initial declaration
+  salary = 30000;       // reassignment -> value changed
+  console.log(salary);  // Output: 30000
+
+***const***
+
+36)Create a const variable called pi with the value 3.14.
+
+a)const pi = 3.14;
+  console.log(pi); // Output: 3.14
+
+  const: keyword used to declare a constant variable.
+
+  pi: variable name.
+
+  3.14: initialization (the value assigned).
+
+  console.log(pi); : prints the value stored in the variable.
+
+
+37)Can a const variable be reassigned?
+
+a) No. a const variable cannot be reassigned once it has been initialized.
+
+    ex:const pi = 3.14;
+       pi = 3.14159;   //  Error -> Assignment to constant variable
+
+   -> const requires initialization at the time of declaration.
+
+   -> It does not allow reassignment or redeclaration.
+
+
+38)Can a const variable be redeclared?
+
+a)No . a const variable cannot be redeclared in the same scope.
+
+  ex:const pi = 3.14;
+     const pi = 3.14159;   //  Error -> Identifier 'pi' has already been declared
+
+    -> const must be declared once and initialized immediately.
+
+    -> It does not allow redeclaration or reassignment.
+
+
+39) What is wrong with this code?
+
+    const age;
+    age = 25;
+
+a) const variable must be initialized at the time of declaration.
+
+   ex:const age;      //Error -> Missing initializer in const declaration
+      age = 25;       // Not allowed -> Assignment to constant variable
+
+Error explanation:
+    
+    const age; -> invalid because const requires an initial value.
+
+    age = 25; -> also invalid because once declared, a const variable cannot be reassigned.
+
+Correct way:const age = 25;   // Must be initialized immediately
+
+            console.log(age); // Output: 25
+
+* Initialization required->const must be assigned a value when declared.
+
+* No reassignment -> you cannot change its value later.
+
+* No redeclaration ->you cannot declare the same const again in the same scope.
+
+
+40)What happens here?
+
+    const price = 500;
+    price = 1000;
+
+a) It shows error:const price = 500;
+
+                price = 1000;   // Error
+        
+Error explanation:
+
+    const price = 500; -> declares a constant variable and initializes it with 500.
+
+    price = 1000; -> tries to reassign the value, which is not allowed for a const variable.
+
+Correct Way:
+
+If you want a variable whose value can change, use let instead.
+
+    let price = 500;
+    price = 1000;   // Allowed
+    console.log(price); // Output: 1000
+
+* const -> fixed value, no reassignment or redeclaration.
+
+* let -> allows reassignment but not redeclaration.
+
+* var -> allows both redeclaration and reassignment.
+
+
+41)Create a const variable called country with the value "India".
+
+a)const country = "India";
+  console.log(country); // Output: India
+
+42)What will be the output?
+
+    const x = 100;
+    console.log(x);
+
+a)console displays output 100.
+
+
+43)Which keyword should you use if the value should not be reassigned?
+
+a) const keyword ..
+ 
+    Initialization required -> must be assigned a value at declaration.
+
+    No reassignment -> once set, the value cannot be changed.
+
+    No redeclaration -> cannot declare the same variable name again in the same scope.
+
+  Ex:  const country = "India";   //  valid
+       country = "USA";           //  Error -> Assignment to constant variable
+
+    -> So, if the value should remain fixed (like pi, gravity, or a country name), always use const.
+
+
+44)What is the difference between let and const?
+    
+a)    let:
+        Block-scoped (only accessible inside { }).
+
+        Cannot be redeclared in the same scope.
+
+        Can be reassigned after declaration.
+
+        Initialization is optional (you can declare first, assign later).
+
+    const:
+        Block-scoped (same as let).
+
+        Cannot be redeclared in the same scope.
+
+        Cannot be reassigned - once set, the value is fixed.
+
+        Must be initialized at the time of declaration.
+
+
+45)What is the difference between var and const?
+
+a)    var:
+            Can be redeclared in the same scope.
+
+            Can be reassigned freely.
+
+            Initialization is optional (you can declare first, assign later).
+     const:
+            Cannot be redeclared in the same scope.
+
+            Cannot be reassigned after initialization.
+
+            Must be initialized immediately at declaration.
+
+
+***Printing & Console***
+
+46)Write JavaScript code to print Hello World using console.log().
+
+ a) console.log("Hello World");// output:Hello World
+
+
+47)Write JavaScript code to print the number 500 using console.log().
+
+a)console.log(500);//output:500
+
+
+48)What is the purpose of console.warn()?
+
+a)console.warn("This is a warning message!");
+
+  output:  ⚠️ This is a warning message!
+
+-> It works like console.log() but highlights the output as a warning.
+
+-> typically shown with a yellow triangle icon in most browsers.
+
+-> Useful for alerting developers about potential issues that aren't errors but should be noticed.
+
+
+49) What is the purpose of console.error()?
+
+a)console.error("Something went wrong!");
+
+  Output:  ❌ Something went wrong!
+
+  ->Works like console.log() but highlights the output as an error.
+
+T ->ypically shown with a red icon or text in most browsers.
+
+  ->Useful for reporting serious problems that need attention.
+
+  ->Helps developers debug by clearly distinguishing errors from normal logs or warnings.
+
+
+  50) What is the purpose of each?
+
+        alert()
+        prompt()
+        confirm()
+        document.writeln()
+        console.log()
+
+    a) alert():
+            ->Displays a popup message box with an OK button.
+            ->Used to show simple notifications or information.
+
+        Ex: alert("Hello! This is an alert.");
+
+        prompt():
+            ->Displays a popup box asking the user for input, with a text field and OK/Cancel buttons.
+            -> Used to collect quick input from the user.
+
+        Ex: let name = prompt("Enter your name:");
+            console.log(name);
+
+        Confirm():
+            ->Displays a popup box with a message and OK/Cancel buttons.
+            ->Returns true if OK is clicked, false if Cancel is clicked.
+
+            Ex: let result = confirm("Do you want to continue?");
+                console.log(result); // true or false
+
+        document.writeln():
+                ->Writes text directly into the HTML document.
+                ->Often used for quick testing, but not recommended in modern practice because it can overwrite the page.
+
+                EX: document.writeln("Hello World from document.writeln()");
+
+        console.log():
+                Prints output to the browser's developer console.
+                Used for debugging and checking values during development.
+
+                Ex: console.log("Hello World");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
