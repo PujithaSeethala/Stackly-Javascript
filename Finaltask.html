@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="Finaltask.css">
+</head>
+<body>
+   <!-- 2. Dashboard UI-->
+<!--====================-->
+    <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+     <div id="dateTime"></div>
+
+    <div id="searchBar">
+    <input type="text" name="searchEmployee" id="searchInput" placeholder="Search Employee" required >
+    <button type="search">Search</button>
+    </div>
+    
+
+    <div id="departments">
+      <button onclick="filteredDepartment('All')">All Employees</button>
+      <button onclick="filteredDepartment('IT')">IT</button>
+      <button onclick="filteredDepartment('HR')">HR</button>
+      <button onclick="filteredDepartment('Finance')">Finance</button>
+      <button onclick="filteredDepartment('Marketing')">Marketing</button>
+    </div>
+    
+    <div id="employeeCount">
+        Employee Count:0
+      </div>
+
+  
+       <div id="salaryDashboard">Calculating dynamic outflows...</div>
+
+    <div id="sortButtons">
+    <button onclick="sortEmployees('name')">Sort by Name</button>
+    <button onclick="sortEmployees('age')">Sort by Age</button>
+    <button onclick="sortEmployees('salary')">Sort by Salary</button>
+  </div>
+
+<div id="employees"><!--it displays all employee cards--></div>
+
+    <div id="addEmployee">
+    <h3>ADD EMPLOYEE</h3>
+    <input type="text" id="empName" placeholder="Name"><br>
+    <input type="number" id="empAge" placeholder="Age"><br>
+    <input type="email" id="empEmail" placeholder="Email"><br>
+    <input type="text" id="empDept" placeholder="Department"><br>
+    <input type="number" id="empSalary" placeholder="Salary"><br>
+    <button onclick="addEmployees()">Add Employee</button>
+        
+    <div id="errorMsg" class="error"></div>
+
+      <h2>Employee data loaded successfully</h2>
+
+
+    
+      <script src="./Finaltask.js"></script>
+
+
+
+</body>
+</html>
